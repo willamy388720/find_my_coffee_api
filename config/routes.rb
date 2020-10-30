@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :stores, only: %i[index show]
       resources :ratings, only: %i[create]
+      resources :google_stores, only: %i[index show]
     end
   end
 end
