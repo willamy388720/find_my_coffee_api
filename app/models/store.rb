@@ -12,6 +12,6 @@ class Store < ApplicationRecord
   def ratings_average
     return 0 if ratings.empty?
 
-    (ratings.sum(:value) / ratings.count).to_i
+    (ratings.sum(:value) / ratings.count).to_f
   end
 end
